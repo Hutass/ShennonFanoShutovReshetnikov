@@ -70,6 +70,8 @@ namespace ShennonFanoShutovReshetnikov
             }
         }
 
+        
+
         public string Encode(string inputPath, ProgressBar progressBar)
         {
             List<tableNote> table = new List<tableNote>();

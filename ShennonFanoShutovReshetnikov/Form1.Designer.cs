@@ -49,6 +49,10 @@
             this.button_decode_file = new System.Windows.Forms.Button();
             this.groupBox_encode = new System.Windows.Forms.GroupBox();
             this.groupBox_decode = new System.Windows.Forms.GroupBox();
+            this.button_Test = new System.Windows.Forms.Button();
+            this.textBox_Test = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.labelTime = new System.Windows.Forms.Label();
             this.groupBox_encode.SuspendLayout();
             this.groupBox_decode.SuspendLayout();
             this.SuspendLayout();
@@ -79,7 +83,7 @@
             // 
             // button_decode
             // 
-            this.button_decode.Location = new System.Drawing.Point(498, 52);
+            this.button_decode.Location = new System.Drawing.Point(499, 52);
             this.button_decode.Name = "button_decode";
             this.button_decode.Size = new System.Drawing.Size(105, 23);
             this.button_decode.TabIndex = 3;
@@ -214,7 +218,7 @@
             // 
             // button_decode_file
             // 
-            this.button_decode_file.Location = new System.Drawing.Point(609, 52);
+            this.button_decode_file.Location = new System.Drawing.Point(611, 52);
             this.button_decode_file.Name = "button_decode_file";
             this.button_decode_file.Size = new System.Drawing.Size(105, 23);
             this.button_decode_file.TabIndex = 18;
@@ -246,11 +250,50 @@
             this.groupBox_decode.TabStop = false;
             this.groupBox_decode.Text = "Декодирование";
             // 
+            // button_Test
+            // 
+            this.button_Test.Location = new System.Drawing.Point(615, 333);
+            this.button_Test.Name = "button_Test";
+            this.button_Test.Size = new System.Drawing.Size(105, 23);
+            this.button_Test.TabIndex = 21;
+            this.button_Test.Text = "Тест";
+            this.button_Test.UseVisualStyleBackColor = true;
+            this.button_Test.Click += new System.EventHandler(this.buttonTest_Click);
+            // 
+            // textBox_Test
+            // 
+            this.textBox_Test.Location = new System.Drawing.Point(502, 333);
+            this.textBox_Test.Name = "textBox_Test";
+            this.textBox_Test.Size = new System.Drawing.Size(107, 23);
+            this.textBox_Test.TabIndex = 22;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(502, 249);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 15);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Время выполнения:";
+            // 
+            // labelTime
+            // 
+            this.labelTime.AutoSize = true;
+            this.labelTime.Location = new System.Drawing.Point(625, 249);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(42, 15);
+            this.labelTime.TabIndex = 23;
+            this.labelTime.Text = "Время";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 400);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labelTime);
+            this.Controls.Add(this.textBox_Test);
+            this.Controls.Add(this.button_Test);
             this.Controls.Add(this.groupBox_decode);
             this.Controls.Add(this.groupBox_encode);
             this.Controls.Add(this.progressBarExecution);
@@ -299,5 +342,9 @@
         private Button button_decode_file;
         private GroupBox groupBox_encode;
         private GroupBox groupBox_decode;
+        private Button button_Test;
+        private TextBox textBox_Test;
+        private Label label7;
+        private Label labelTime;
     }
 }
